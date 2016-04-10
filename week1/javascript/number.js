@@ -7,7 +7,7 @@ var average = 0;
 
 // Create event listeners - when click event occurs, execute function
 submit.addEventListener("click", onClick);
-reset.addEventListener("click", reset);
+reset.addEventListener("click", resetAll);
 
 // Submit button function
 function onClick(evt) {
@@ -30,8 +30,8 @@ function onClick(evt) {
 }
 
 // Reset button function
-function reset(evt){
-  evt.preventDefault(); 
+function resetAll(){
+  //evt.preventDefault(); 
   $( "#number" ).val(""); // Clear the input field
   // Reset variables
   totalnumbers = 0;
