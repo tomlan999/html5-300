@@ -1,0 +1,19 @@
+* {font-family: sans-serif;
+}
+
+h1 {
+  color: #1A1DC9;
+}
+
+h2 {
+  color: #AB5B33;
+}
+
+li {
+  list-style: none;
+  padding: .5em;
+}
+
+fieldset {
+  width: 400px;
+}

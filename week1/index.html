@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Week 1 Number Form</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  </head>
+  <body>
+    <h1>Number Input Form</h1>
+    
+    <!--  Form to capture user input -->
+    
+    <form id="number-input-form" method="post" action="#">
+      <fieldset>
+        <ul>
+          <li>Enter a Number: <input type=number id="number"></li>
+          <li><input type="submit" id="submit" value="Submit"/></li>
+          <li><input type="submit" id="reset" value="Reset"/></li>
+        </ul>
+      </fieldset>
+    </form>
+    
+    <!-- Paragraph elements to be updated by Javascript functions -->
+    
+    <h2>Total Numbers Submitted</h2>
+    <p id="totalnumbers">0</p>
+    
+    <h2>Sum of All Numbers</h2>
+    <p id="sum">0</p>
+    
+    <h2>Average of All Numbers</h2>
+    <p id="average">0</p>
+
+  
+    <script type="text/javascript" src="javascript/number.js"></script>
+  
+  </body>
+
+</html>
