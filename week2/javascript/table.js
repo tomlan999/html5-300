@@ -4,7 +4,7 @@
 --CreateRow Function:  Accept variables from submit function, create tableRow object
 --addToArray Function:  Accept tableRow object as an argument, push it onto players array
 --buildTable Function:  Accept players array as an argument, remove html table, build new html table
---cancel Function:  Clear form values
+--clear Function:  Clear form values
 --addNew Function:  Hide the table and show the form
 --showForm Function:  Hide the form and show the table
 
@@ -14,7 +14,7 @@ var players = []
 var tableRow
 
 $('#submit').on( 'click', submit );
-$('#cancel').on( 'click', cancel );
+$('#cancel').on( 'click', showTable );
 $('#add-new').on( 'click', addNew );
 
 function submit(evt) {
@@ -37,7 +37,7 @@ function submit(evt) {
     addToArray(tableRow);
     buildTable(players);
     showTable();
-    cancel();
+    clear();
   }
 }
 
@@ -61,7 +61,6 @@ function buildTable (playerArray) {
   $("#table-body").append('<th>User Comment</th>');
   $("#table-body").append('</tr>');
   for (i = 0; i < playerArray.length; i++) {
-    console.log(playerArray[i]);
     $("#table-body").append('<tr>');
     $("#table-body").append('<td>' + playerArray[i].name + '</td>');
     $("#table-body").append('<td>' + playerArray[i].number + '</td>');
@@ -70,7 +69,7 @@ function buildTable (playerArray) {
   }
 }
 
-function cancel() {
+function clear() {
   $( "#name" ).val( "" );
   $( "#number" ).val( "" );
   $( "#comment" ).val( "" );
@@ -84,4 +83,5 @@ function addNew () {
 function showTable() {
   $( "#table" ).show();
   $( "#form" ).hide();
+  clear();
 }
