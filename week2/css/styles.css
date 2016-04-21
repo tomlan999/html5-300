@@ -18,7 +18,7 @@ fieldset {
   width: 500px;
 }
 
-#form {
+#form, #submit-edit, #cancel-edit {
   display: none;
 } 
 
