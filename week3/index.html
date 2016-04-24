@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Week 1 Number Form</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  </head>
+  <body>
+    <h1>Numbers and String Input Form</h1>
+    <p>Please enter a number or some text:</p>
+    
+    <!--  Form to capture user input -->
+    
+    <form id="input-form" method="post" action="#">
+      <ul>
+        <li><textarea id="textarea"></textarea></li>
+        <li><input type="submit" id="submit" value="Submit"/>
+        <input type="button" id="reset" value="Reset"/></li>
+      </ul>
+    </form>
+    
+    <!-- Paragraph elements to be updated by Javascript functions -->
+    
+    <h2>Total Numbers Submitted</h2>
+    <p id="totalnumbers">0</p>
+    
+    <h2>Sum of All Numbers</h2>
+    <p id="sum">0</p>
+    
+    <h2>Average of All Numbers</h2>
+    <p id="average">0</p>
+    
+    <h2>Total Strings Entered</h2>
+    <p id="totalstrings">0</p>
+  
+    <h2>Strings Concatenated</h2>
+    <p id="concat"></p>
+    
+    <!-- Table of word counts created by Javascript functions -->
+    
+    <div id="table">
+      <table>
+        <thead>
+          <tr>
+            <th>Word</th>
+            <th>Count</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+        </tbody>
+      </table>
+    </div>
+
+  
+    <script type="text/javascript" src="javascript/textandnumbers.js"></script>
+  
+  </body>
+
+</html>

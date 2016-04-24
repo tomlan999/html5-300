@@ -1,0 +1,43 @@
+* {box-sizing: border-box;
+}
+
+* {font-family: sans-serif;
+}
+
+h1 {
+  color: #1A1DC9;
+}
+
+h2 {
+  color: #AB5B33;
+  margin: auto;
+}
+
+p {
+  margin: .1em;
+}
+
+li {
+  list-style: none;
+  padding: .5em;
+}
+
+textarea {
+  height: 150px;
+  width: 500px;
+}
+
+td {
+  padding: 0em 2em;
+}
+
+th {
+  padding: 0em .5em;
+  color: #AB5B33;
+  font-size: 1.5em;
+}
+
+#concat {
+  padding: .3em;
+  width: 500px;
+}
