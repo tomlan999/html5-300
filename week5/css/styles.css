@@ -1,0 +1,32 @@
+* {box-sizing: border-box;
+}
+
+* {font-family: sans-serif;
+}
+
+#outer-box {
+  height: 700px;
+  width: 700px;
+  border: 5px solid black;
+  position: relative;
+  left: 50px;
+  top: 50px;
+}
+
+#green-box {
+  height: 100px;
+  width: 100px;
+  background-color: green;
+  position: absolute;
+  top: 150px;
+  left: 100px;
+}
+
+#blue-box {
+  height: 100px;
+  width: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 440px;
+  left: 390px;
+}
