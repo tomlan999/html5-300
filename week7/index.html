@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Week 7 Local Storage</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  </head>
+  <body>
+    
+    <h1>Seattle Sports Stars Jersey Numbers</h1>
+    
+    <p>Build a list of your favorite Seattle sports stars and their Jersey numbers!</p>
+    
+    <!-- Table elements to be updated by Javascript functions -->
+    
+    <div id="table">
+      <button id="add-new" type="button">Add A Player!</button>
+      <table>
+        <thead>
+          <tr>
+            <th>Player Name</th>
+            <th>Player Number</th>
+            <th>User Comment</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          
+        </tbody>
+      </table>
+    </div>
+
+  <!--  Form to capture user input -->
+    
+    <div id="form">
+      <form id="number-input-form" method="post" action="#">
+        <fieldset>
+          <ul>
+            <li>Enter a Player's Name: <input type="text" id="name"></li>
+            <li>Enter the Player's Jersey Number: <input type="number" id="number"></li>
+            <li>Add a Comment: <input type="text" id="comment"></li>
+            <li><input type="submit" id="submit" edit="n" value="Submit"/></li>
+            <li><input type="button" id="cancel" value="Cancel"/></li>
+            <li><input type="button" id="submit-edit" value="Submit"/></li>
+            <li><input type="button" id="cancel-edit" value="Cancel"/></li>
+          </ul>
+        </fieldset>
+      </form>
+    </div>
+    
+    <script type="text/javascript" src="javascript/table.js"></script>
+  
+  </body>
+
+</html>

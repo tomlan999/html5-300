@@ -1,0 +1,33 @@
+* {font-family: sans-serif;
+}
+
+h1 {
+  color: #1A1DC9;
+}
+
+h2 {
+  color: #AB5B33;
+}
+
+li {
+  list-style: none;
+  padding: .5em;
+}
+
+fieldset {
+  width: 500px;
+}
+
+#form, #submit-edit, #cancel-edit {
+  display: none;
+} 
+
+#add-new {
+  margin: .5em;
+
+}
+
+th, td {
+  border: 1px solid black;
+  padding: .5em;
+}
